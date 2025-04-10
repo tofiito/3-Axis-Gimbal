@@ -1,3 +1,4 @@
+# ================ C/C++ Core Rules ================
 # Prerequisites
 *.d
 
@@ -5,7 +6,6 @@
 *.o
 *.ko
 *.obj
-*.elf
 
 # Linker output
 *.ilk
@@ -34,7 +34,6 @@
 *.app
 *.i*86
 *.x86_64
-*.hex
 
 # Debug files
 *.dSYM/
@@ -50,3 +49,34 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# ================ STM32CubeIDE/Embedded ================
+# CubeIDE generated
+Debug/
+Release/
+.build/
+*.launch
+.settings/
+.cproject
+.project
+.mxproject
+*.workspace
+
+# Build artifacts
+*.elf
+*.hex
+*.bin
+*.lst
+
+# Editors/OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Local configs
+.env
+*.local
